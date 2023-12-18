@@ -4,6 +4,10 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager
 import matplotlib.font_manager as fm
 
+import matplotlib.pyplot as plt
+plt.switch_backend('agg')
+
+
 font_list = fm.findSystemFonts()
 for font in font_list:
     print(font)
